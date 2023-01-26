@@ -23,7 +23,7 @@ const deleteGrocery = id => {
 
 <template>
     <main>
-    <h1 class="title">📝 Vue Grocery List 📝</h1>
+    <h1 class="title">📝Store Grocery List with Vue📝</h1>
         <form class="newGroceryForm" @submit.prevent="addGrocery">
         <input
             id="newGrocery"
@@ -52,17 +52,17 @@ main {
     form {
         @apply flex focus-within:ring-8 focus-within:ring-accent focus-within:rounded-lg;
         input {
-            @apply bg-white text-comment p-2 w-80 text-2xl rounded-l-md outline-none;
+            @apply bg-white text-indigo-700 p-2 w-80 text-2xl rounded-l-md outline-none;
         }
         button {
             @apply bg-accent text-background p-2 text-2xl font-bold rounded-r-md;
             &:hover {
-                @apply bg-purplish;
+                @apply bg-redish;
             }
         }
     }
     ul {
-        @apply flex flex-col items-center justify-center rounded-lg bg-comment;
+        @apply flex flex-col items-center justify-center rounded-lg bg-bluish;
         li {
             @apply bg-white text-background m-2 p-2 w-96 text-center;
             &:hover{
